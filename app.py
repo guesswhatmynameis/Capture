@@ -11,6 +11,8 @@ from pynput.mouse import Button, Controller
 import time
 import pyperclip
 
+pytesseract.pytesseract.tesseract_cmd = 'C:/OCR/Tesseract-OCR/tesseract.exe'  # your path may be different
+
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
